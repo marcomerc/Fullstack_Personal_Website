@@ -1,0 +1,19 @@
+{
+  "name": "fullstack_personal_website",
+  "version": "1.0.0",
+  "description": "Full stack of my personal gallery.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcomerc/Fullstack_Personal_Website.git"
+  },
+  "author": "Marco Mercado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcomerc/Fullstack_Personal_Website/issues"
+  },
+  "homepage": "https://github.com/marcomerc/Fullstack_Personal_Website#readme"
+}
