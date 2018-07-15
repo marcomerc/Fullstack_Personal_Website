@@ -8,21 +8,23 @@ app.set("view engine", "ejs");
 var GallerySchema = new mongoose.Schema({
   Photo: String,
   Caption: String,
-  created: {type: Date, default: Date.now}
 });
 var Gallery = mongoose.model("Gallery", GallerySchema);
-
-Gallery.create({
-  Photo: String,
-  Caption: String,
-  created: {type: Date, default: Date.now}
-
-
-});
+//
+// Gallery.create({
+//   Photo: "http://jasmijnyoga.com/wp-content/uploads/2018/01/vogelbescherming-news-1.jpeg",
+//   Caption: "bird ",
+// });
 
 
 app.get("/", function(req,res){
-    res.render("main");
+  Gallery.find({}, function(err,photos) {
+    if (err) {
+      console.log("error happen");
+    }else {
+      res.render("main", {photos: photos});
+    }
+  });
 
 });
 

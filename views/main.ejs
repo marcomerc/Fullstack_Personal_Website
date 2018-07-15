@@ -1,1 +1,8 @@
 <p>hello</p>
+
+
+
+<%photos.forEach(function(photo){%>
+  <img src="<%=photo.Photo%>" alt="">
+  <p> <%=photo.Caption%> </p>
+<%});%>
