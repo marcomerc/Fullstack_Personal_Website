@@ -25,7 +25,6 @@ app.get("/", function(req,res){
       res.render("main", {photos: photos});
     }
   });
-
 });
 
 app.listen(3000,function(req,res){
